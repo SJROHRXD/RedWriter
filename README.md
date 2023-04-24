@@ -49,5 +49,6 @@ Shoutout to [Glasp](https://glasp.co/), as their extension is amazing and wonder
 
 ## Acknowledgements
 
-- [Suraj Vishwakarma via DailyDev](https://daily.dev/blog/create-chrome-extension-with-html-css-and-javascript) for a wonderfully straightforward overview of Chrome Extension Development 🌷 | [Suraj's Personal Site](https://surajondev.com/)
+- [Suraj Vishwakarma](https://surajondev.com/) via [DailyDev](https://daily.dev/blog/create-chrome-extension-with-html-css-and-javascript) for a wonderfully straightforward overview of Chrome Extension Development 🌷
+
 - [OpenAI](https://www.openai.com/) for their assistance in developing this extension (and this README, lol), and especially for assistance in isolating the *deeeeeeeply* nested transcript elements in YouTube's code ✨
