@@ -27,6 +27,12 @@ A Google Chrome extension that allows users to extract and copy the transcript o
 
 > Note: Make sure the transcript is visible on the YouTube video page before using the extension. To display the transcript, click on the three-dot menu icon below the video, then select "Open transcript."
 
+## Future Development
+
+- Stylization (she's a little ugly)
+- Option to exclude timestamps
+- Better formatting upon Paste
+
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
