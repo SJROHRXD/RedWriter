@@ -1,0 +1,235 @@
+/* 
+/* $green: #A29F15;
+$red: #E03616;
+$blue: #4ECDC4;
+$dgreen: #34623F;
+$pink: #EDAFB8; */
+
+/* html, body {
+  margin: auto;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  display:block;
+  background-color: hsl(350, 100%, 95%)
+
+}
+
+#container {
+  overflow-clip-margin: -1px;
+  grid-auto-flow: column;
+  column-gap: 1em;
+}
+
+h1 {
+  column-gap: 1em;
+  color: #E03616;
+  font-size: 2rem;
+}
+
+#transcript {
+  background-color: hsl(348, 89%, 93%);
+  border-radius: 0.6em;
+  border-style: none;
+}
+
+#transcript:hover {
+  background-color: hsl(348, 100%, 93%);
+  border-radius: 0.6em;
+  border-style: none;
+}
+
+textarea:focus-visible {
+  background-color: hsl(350, 100%, 95%);
+  border-radius: 0.6em;
+  outline: unset;
+  outline-offset: unset;
+  filter: saturate(400%);
+}
+
+button {
+    grid-column-start: auto;    box-sizing: border-box;
+    appearance: none;
+    background-color: #E03616;
+    border: 2px solid hsl(350, 100%, 95%);
+    border-radius: 0.6em;
+    color: hsl(349, 59%, 6%);
+    cursor: pointer;
+    display: inline-block;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 1% 0% 1% 0%;
+    padding: 1em 1em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+  filter:blur(1px);
+  transition: 2s filter linear;
+  -webkit-transition: 1s -webkit-filter linear;
+  -moz-transition: 1s -moz-filter linear;
+  -ms-transition: 1s -ms-filter linear;
+  -o-transition: 1s -o-filter linear;
+}
+
+  /* BUTTON 5   
+#copy-all {
+  background-color: #E03616;
+  overflow: hidden;
+  z-index: 1;
+}  */
+
+$color-primary: #26E089;
+$color-primary-dark: #00B297;
+$color-secondary: #FF5F87;
+$color-secondary-dark: #FB0779;
+$color-tertiary: #1BDBD1;
+$color-tertiary-dark: #1fa2ff;
+$color-orange: #FFB300;
+$color-purple: #6F16FD;
+$padding-btn: 15px 75px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+  width: 315px !important;
+}
+
+html {
+  box-sizing: border-box;
+  background: #263238;
+}
+
+.container {
+  background: #263238;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  
+  &__btn {
+    display: grid;
+    grid-gap: 2px;
+    justify-items: center;
+    align-items: center;
+    
+    @media screen and (max-width: 100px) {
+      grid-template-columns: 100px;
+      grid-template-rows: repeat(auto-fit);
+    }
+  }
+}
+
+textarea {
+  border-radius: 1.2em;
+  outline: unset;
+  outline-offset: unset;
+
+}
+
+textarea:focus-visible {
+  border-radius: 1.2em;
+  outline: unset;
+  outline-offset: unset;
+  filter: saturate(400%);
+}
+
+
+/*  ALL BUTTONS */
+.btn {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 1.2em;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, .4);
+  
+  &:focus, &:focus::after {
+     outline: none;
+     }
+  
+  &:active {
+     transform: translateY(2px);
+     }
+}
+
+
+
+/*  BUTTON BLUE  */
+.btn-shine {
+  padding: $padding-btn;
+  background-image: linear-gradient(to right, $color-tertiary, $color-tertiary-dark);
+  overflow: hidden; // we dont see the after pseudoelement outside of the button
+    
+    span {
+      z-index: 20; // position of the text infront of the pseudo-element
+    }
+    
+    &::after {
+      background: #fff;
+      content: "";
+      height: 155px;
+      top: -50px;
+      left: -75px;
+      opacity: .3;
+      position: absolute;
+      transform: rotate(35deg);
+      transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: 0; // position of the pseudo-element behind the text
+    }
+
+    &:hover::after {
+            left: 120%;
+            transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+
+/*  BTN GRADIENTS */
+.btn-gradients {
+  padding: $padding-btn;
+  background: transparent;
+  z-index: 1;
+  overflow: hidden;
+  
+  
+  &::after {
+    background-image: linear-gradient(to right, $color-purple, $color-secondary-dark);
+    content: "";
+    height: 100%;
+    width: 160%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1; // position of the pseudo-element behind the text
+    }
+  
+    &:hover::after {
+      left: -120px;
+      transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+      color: #fff;
+    }
+}
