@@ -3,8 +3,10 @@
 A Google Chrome extension that allows users to extract and copy the transcript of a YouTube video.
 
 <p align="center">
+
 ![RedWriter](https://raw.githubusercontent.com/SJROHRXD/RedWriter/master/assets/RDWTR.png)
 ![RedWriter](https://raw.githubusercontent.com/SJROHRXD/RedWriter/master/assets/RDWTR2.png)
+
 </p>
 
 ## Features
