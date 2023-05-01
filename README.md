@@ -1,6 +1,6 @@
 # RedWriter | Extract and Copy YouTube Transcripts 🌼📑
 
-A Google Chrome extension that allows users to extract and copy the transcript of a YouTube video.
+> A Google Chrome extension that allows users to extract and copy the transcript of a YouTube video.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SJROHRXD/RedWriter/master/assets/RDWTR.png" alt="RDWTR"/>
